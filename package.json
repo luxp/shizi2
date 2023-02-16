@@ -10,12 +10,18 @@
   },
   "dependencies": {
     "@vercel/node": "^1.8.4",
+    "antd-mobile": "^5.28.0",
     "assert": "^2.0.0",
     "axios": "^0.21.0",
     "crypto-js": "*",
     "log4node": "^0.1.6",
+    "mongodb": "^5.0.1",
+    "qiniu": "^7.8.0",
+    "qiniu-js": "^3.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "sanitize.css": "^13.0.0",
     "ws": "^8.12.1"
   },
   "devDependencies": {
