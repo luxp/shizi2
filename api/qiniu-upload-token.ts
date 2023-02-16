@@ -1,4 +1,4 @@
-import * as qiniu from 'qiniu'
+import qiniu from 'qiniu'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 
 var accessKey = 'v8KS71ioKp7tLzb7rzXdYofso5CkNO9rIwfE139M'
