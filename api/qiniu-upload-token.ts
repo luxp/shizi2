@@ -4,6 +4,8 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 var accessKey = 'v8KS71ioKp7tLzb7rzXdYofso5CkNO9rIwfE139M'
 var secretKey = 'E3Z-ljUYJtETEkd4KSpEev3IfurdDpPOCwQgdEUu'
 
+console.log(qiniu)
+
 const mac = new qiniu.auth.digest.Mac(accessKey, secretKey)
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
