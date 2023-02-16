@@ -4,8 +4,8 @@ let uri =
   process.env.MONGODB_URI || 'mongodb://admin:mylu123654@127.0.0.1:27017'
 let dbName = process.env.MONGODB_DB || 'localtest'
 
-let cachedClient: MongoClient
-let cachedDb: Db
+let cachedClient
+let cachedDb
 
 if (!uri) {
   throw new Error(

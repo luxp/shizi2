@@ -6,7 +6,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { body } = req
   const { db } = await connectToDatabase()
 
-  const pointsCollection = db.collection<Point>('points')
+  const pointsCollection = db.collection('points')
 
   pointsCollection.insertOne(body)
 
