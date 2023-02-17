@@ -14,5 +14,5 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   const putPolicy = new qiniu.rs.PutPolicy(options)
   const uploadToken = putPolicy.uploadToken(mac)
 
-  res.status(200).json({ uploadToken })
+  res.status(200).json({ uploadToken, t: 'dd12312' })
 }
