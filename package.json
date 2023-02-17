@@ -6,7 +6,7 @@
   "scripts": {
     "tsup": "tsup src/api/*.ts -d api --format esm --watch src/api/",
     "dev": "vite",
-    "build": "tsup src/api/*.ts -d api --format esm && tsc && vite build",
+    "build": "tsc && vite build && tsup src/api/*.ts -d dist/api --format esm",
     "preview": "vite preview"
   },
   "dependencies": {
