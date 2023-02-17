@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "tsup": "tsup src/api/*.ts -d api --format esm --watch src/api/",
     "dev": "vite",
-    "build": "tsc && vite build && tsup src/api/*.ts -d dist/api --format esm",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -29,7 +28,6 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
-    "tsup": "^6.6.3",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }
