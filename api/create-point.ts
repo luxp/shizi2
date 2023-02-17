@@ -1,6 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { connectToDatabase } from './utils/mongodb.js'
-import type { Point } from '../types'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { body } = req
